@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_ty_gia_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#B2000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="430.99dp"
+        android:layout_height="245.99dp" >
+
+        <LinearLayout
+            android:id="@+id/bgr"
+            android:layout_width="403.33dp"
+            android:layout_height="224.66dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bgr"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45.33dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="Chọn ngày"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/c1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal" >
+
+                    <Button
+                        android:id="@+id/set"
+                        android:layout_width="100.66dp"
+                        android:layout_height="35.33dp"
+                        android:background="@drawable/selector_btn"
+                        android:onClick="goTable"
+                        android:text="Set"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <DatePicker
+                    android:id="@+id/datepicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/c1"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/selector_btn_close"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+</RelativeLayout>
